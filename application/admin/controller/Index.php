@@ -35,11 +35,12 @@ class Index extends Controller
      */
     public function dbFind3()
     {
+        //header('Content-Type:application/json');//加上这行,前端那边就不需要var result =
         $User = new User(); // 实例化User对象
-//        $User->where('age=23 AND name="dhr"')->select();
-//        echo json_encode($User);
+        $User->setId("6");
         $User->setName("dddd");
-        echo json_encode($User);
+        $User->setAge("22");
+       echo json_encode((array)$User);
     }
 
 

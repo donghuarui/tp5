@@ -25,18 +25,18 @@ class User extends Model
      * @param $name
      * @param $age
      */
-    public function __construct($id, $name, $age)
-    {
-        $this->id = $id;
-        $this->name = $name;
-        $this->age = $age;
-    }
+//    public function __construct($id = 0, $name = "111", $age = "22")
+//    {
+//        $this->id = $id;
+//        $this->name = $name;
+//        $this->age = $age;
+//    }
 
     // 模型初始化
-    protected static function init()
-    {
-        //TODO:初始化内容
-    }
+//    protected static function init()
+//    {
+//        //TODO:初始化内容
+//    }
 
     /**
      * @return mixed
